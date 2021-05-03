@@ -14,3 +14,4 @@ webots worlds/drone_tuning.wbt
 ```
 python plot.py
 ```
+[[/fig/pose.png|pose]]

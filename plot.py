@@ -6,7 +6,9 @@ log_dir = "pose"
 log_files = sorted(os.listdir(log_dir))
 fig, ax = plt.subplots()
 fig.suptitle("Height")
-ax.axhline(y=1, color = 'r', linestyle='--')
+ax.set_ylabel('m')
+ax.set_xlabel('Step')
+ax.axhline(y=1, color = 'r', linestyle='--', label='Target')
 for log_ in log_files:
     pose = np.loadtxt(os.path.join(log_dir,log_))
     pose_y = pose[:, 1]
