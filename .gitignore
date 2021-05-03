@@ -1,0 +1,6 @@
+/log
+/pose
+*.pyc
+*.wbproj
+*.cache
+/.idea
